@@ -1,0 +1,287 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplicacion 7</title>
+
+<!-- grupo CSS -->
+<link rel="stylesheet" href="css/app7.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+<!--------------------------------------->
+
+    
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<link rel="stylesheet" type="text/css" href="visor/engine1/style.css" />
+	<script type="text/javascript" src="visor/engine1/jquery.js"></script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/batalla7.jpg','imagenes/batalla1.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    	<h1>Dia Internacional de la Tierra</h1>
+    </div>
+		<!-- Start WOWSlider.com BODY section -->
+	<div id="wowslider-container1">
+	<div class="ws_images"><ul>
+<li><img src="visor/data1/images/batalla2.jpg" alt="batalla2" title="batalla2" id="wows1_0"/></li>
+<li><img src="visor/data1/images/batalla1.jpg" alt="batalla1" title="batalla1" id="wows1_1"/></li>
+<li><img src="visor/data1/images/batalla4.jpg" alt="batalla4" title="batalla4" id="wows1_2"/></li>
+<li><img src="visor/data1/images/batalla3.jpg" alt="batalla3" title="batalla3" id="wows1_3"/></li>
+</ul></div>
+<div class="ws_bullets"><div>
+<a href="#" title="batalla2"><img src="visor/data1/tooltips/batalla2.jpg" alt="batalla2"/>1</a>
+<a href="#" title="batalla1"><img src="visor/data1/tooltips/batalla1.jpg" alt="batalla1"/>2</a>
+<a href="#" title="batalla4"><img src="visor/data1/tooltips/batalla4.jpg" alt="batalla4"/>3</a>
+<a href="#" title="batalla3"><img src="visor/data1/tooltips/batalla3.jpg" alt="batalla3"/>4</a>
+</div></div>
+<span class="wsl"><a href="http://wowslider.com">Slideshow HTML5</a> by WOWSlider.com v4.8</span>
+	<div class="ws_shadow"></div>
+	</div>
+	<script type="text/javascript" src="visor/engine1/wowslider.js"></script>
+	<script type="text/javascript" src="visor/engine1/script.js"></script>
+	<!-- End WOWSlider.com BODY section -->
+<div>
+	<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    	<h2>¿Origenes de la Batalla?</h2>
+    	<p>Se muestra información sobre la Batalla</p>
+    	</a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Personajes que participaron?</h2>
+        <p>Se muestra información sobre la Batalla</p>
+        </a>
+    </li>
+       <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Lugar de la Batalla?</h2>
+        <p>Se muestra información sobre la Batalla</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Conclucion de la Batalla</h2>
+        <p>Se muestra información sobre la Batalla</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Como se conmenora?</h2>
+        <p>Se muestra información sobre la celebracion</p>
+        </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+    	<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>¿Que es del lugar en donde se llevo acavo la Batalla?</h2>
+        <p>Se muestra información sobre los lugares</p>
+        </a>
+    </li>
+    </ul>
+</div>
+
+<div data-role="footer" align="center" data-theme="a">
+	<div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+    </div>
+    <div>
+       <h4>Aplicacion Siete</h4>
+       <h4>Jean Karlo Jimenez Contreras</h4>
+    </div>
+</div>
+</div>
+
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Origen de la Batalla?</h1>
+  </div>
+   <div data-role="content" align="center">
+   <div>
+   <h2>El presidente Benito Juárez declaró el 17 de julio de 1861, una moratoria de dos años en el pago de deudas a prestamistas extranjeros. Posteriormente, en octubre de ese mismo año, Francia, Inglaterra y España acordaron intervenir la República para exigir el pago de sus deudas.
+
+A principios de 1862, Inglaterra y España llegaron a un acuerdo con México y retiraron sus tropas; sin embargo, Francia manifestó su deseo de establecer un Gobierno monárquico, el cual recibió el apoyo de los políticos mexicanos conservadores.
+
+De este modo, Francia envió refuerzos al mando del general Charles Ferdinand Latrille, conde de Lorencez, a fin de emprender la ocupación de México, por lo que a finales de abril, el ejército mejor organizado de Europa marchaba sobre el estado de Puebla.</h2>
+   <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/batalla7.jpg',1)"><img src="imagenes/batalla5.jpg" width="50%" height="50%" id="Image23"></a></p>
+   </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+    </div>
+   <h4> Aplicacion Siete,JKJC</h4>
+   </div>
+</div>
+   </div>
+   
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>¿Personajes que participaron?</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+   <p>Absolutamente todos se llenaron de gloria, pero las acciones más heroicas estuvieron a cargo de los generales:</p>
+   <p> Ignacio Zaragoza,</p>
+   <p> Miguel Negrete,</p>
+   <p> Porfirio Díaz,</p>
+   <p> Antonio Alvarez,</p>
+   <p> Felipe Berriozabal y</p>
+   <p> J. Lamadrid.</p>
+   <p>Y muy importante la participacion de los zacapoaxtlas:</p>
+   <div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor2/wowindex.html" style="width:960px;height:300px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+   </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+   </div>
+   <h4> Aplicacion Siete, JKJC</h4>
+   </div>
+   </div>
+   </div>
+   
+   <div data-role="page" id="Pagina3" data-add-back-btn="true" data-back-btn-text="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Lugares en donde se llevo acabo la Batalla </h1>
+   </div>
+   <div data-role="content" align="center">
+     <p>La batalla comenzo en los limites de Puebla en una colona perteneciente a lo que es hoy la junta auxiliar de Axocopan en la acienda de la trapera, en donde tiempo despues se trzlado a el puente de los molinos, para de ahi tasladarce a la ciudad de Puebla en donde los ejercitos de la republica los esperaban en las iglesias de Loreto y Guadalupe los cuales convirtieron en fuertes.
+</p>
+     <p>Ex hacienda la Trapera</p>
+     <p><img src="imagenes/lugar1.png" width="243" height="157"></p>
+     <p>Fuerte de Loreto</p>
+     <p><img src="imagenes/lugar3.jpg" width="275" height="137"></p>
+     <p>Fuerte de Guadalupe</p>
+     <p><img src="imagenes/lugar2.jpe" width="259" height="194"></p>
+  
+   </div>
+   <div data-role="footer"  align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56"></div>
+   <h4>Aplicacion Siete, JKJC</h4>
+   </div>
+   </div>
+</div>
+   
+   <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Conclusion de la Batalla</h1>
+   </div>
+   <div data-role="content" align="center">
+ <p>Las tropas francesas estaban muy bien equipadas y eran mucho más grandes   que el ejercito Mexicano; por lo que Benito Juárez convocó a toda la   población a que luchara, así se formó un ejército de aproximadamente   4800 hombres.
+ Fue el 5 de Mayo de 1862 cuando el General Laurencez   al mando de las tropas francesas ordenó el asalto a los fuertes de   Loreto y Guadalupe, que defendían la ciudad de Puebla al mando del General Ignacio Zaragoza; el ejercito invasor que fue rechazado con   grandes pérdidas al intentar repetidas veces tomar las fortificaciones, al final tuvieron que abandonar el campo y retirarse vencidos y   perseguidos por la caballería mexicana.Finalmente, el ejército   francés fue derrotado y el general Ignacio Zaragoza, mandó un mensaje   telegráfico al presidente Juárez, que decía &ldquo;Las armas nacionales se han   cubierto de gloria.La Batalla de Puebla simboliza el espíritu de   lucha y el amor a la independencia que caracteriza el pueblo mexicano.   Actualmente éste día se celebra realizando ceremonias cívicas, en muchas   ciudades se realizan desfiles.  y también es costumbre representar la   lucha de ése día con gente personificada tanto de mexicanos como   franceses.</p>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Images89','','imagenes/batalla1.jpg',1)"><img src="imagenes/batalla3.jpg" width="400" height="303" id="Images89"></a></p>
+ <p><img src="imagenes/batalla6.jpg" width="287" height="172"></p>
+
+ 
+     </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+     <div>
+    <h4><img src="imagenes/mdpi.png" width="80" height="56"></h4>
+   <h4>Aplicación Siete, JKJC</h4>
+   </div>
+   </div>
+ </div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Como se conmerora la fecha</h1>
+   </div>
+   <div data-role="content" align="center">
+   <div>
+<p>Cada 5 de mayo en la ciudada de puebla y en varios lugares del mundo se conmemora con representaciones de la batalla y con grandes desfiles alusivos a la fecha con grandes carros alegoricos y con estudiantes de distintos grados academicos desfilando en esta fecha.</p>
+<iframe width="420" height="315" src="https://www.youtube.com/embed/g3l5lJeL7Z4" frameborder="0" allowfullscreen></iframe>
+
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+   <h4>Aplicacion Siete, JKJC</h4>
+   </div>
+</div>
+</div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Lugares de la batalla en la actualidad</h1>
+   </div>
+<div data-role="content" align="center">
+   </div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+         <h1>Ex Hacienda la Trapera</h1>
+          <div>
+          <p>hoy en dia la Ex hacienda la Trapera son solo escombros dejado como vestigios un cuarto y paredones que aun se mantienen en pie, para recordar donde inicia la gloria de esta fecha.</p>
+         
+          <p><center>
+            <img src="imagenes/lugar1.png" width="321" height="268">
+          </center></p>
+         </div>
+          </div>
+<div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Fuerte de Loreto</h1>
+          <div>
+          <p>La que un dia fuera iglesia dedicada a la Virgen de Loreto y que el 5 de mayo se convitiera en el fuerte de puebla hoy es un mueo el cual aun cuenta con cañones y varios vestigios de ese dia, los cuales pueden ser vistos por todo el publico en general.</p>
+          <p><center><img src="imagenes/lugar3.jpg" width="308" height="209"></center></p>
+          </div>
+       <div><center></center> </div>
+         </div>
+         </div>
+<div data-role="main" class="ui-content">
+		<div data-role="collapsible" data-content-theme="false">
+         <h1>Fuerte de Guadalupe</h1>
+          <div>
+          <p>El cual tambien era una iglesia dedicada a la virgen de Guadalupe y que ese dia se convirtiera en el primer fuerte del ejercito mexicano hoy tambien es un museo el cual cuenta con armamento de aquella epoca y vestigios de toda la batalla , el cual tambien esta abierto a todo publico en general.</p>
+          </div>
+       <div><center>
+         <p><img src="imagenes/lugar2.jpe" width="259" height="194"></p>
+       </center></div>
+    </div>
+            <p><center><a href="http://chulavista.mx/fuertes-de-loreto-y-guadalupe-puebla-21059#.Vyoo9XYve7M">visita la pagina para ver los fuertes </a></center></p>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/mdpi.png" width="80" height="56">
+   <h4>Aplicacion Siete, JKJC</h4>
+   </div>
+   </div>
+   </div>
+  </div>
+</body>
+</html>
